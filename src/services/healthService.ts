@@ -7,7 +7,7 @@ export const checkHealth = async (): Promise<IHealthService> => {
     try {
         // Test the connection to the database
         logger.debug('Checking health of database');
-        await prisma.dummy.findFirst();
+        await prisma.checkInSite.findFirst();
         logger.debug('Check for database health was successful');
 
         return {
