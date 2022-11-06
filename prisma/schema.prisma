@@ -10,9 +10,28 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Dummy {
+model CheckInSite {
   id        String   @id @default(uuid()) @db.Uuid
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
   name      String
+  checkInId String @default(uuid()) @db.Uuid
+  creatorId String @db.Uuid
+  tenantId  String @db.Uuid
+
+  userCheckIns UserCheckIn[]
+}
+
+model UserCheckIn {
+  id        String   @id @default(uuid()) @db.Uuid
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  userId    String    @db.Uuid
+  userEntry DateTime
+  userExit  DateTime?
+
+  checkInSiteId String      @db.Uuid
+  checkInSite   CheckInSite @relation(fields: [checkInSiteId], references: [id])
 }

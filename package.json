@@ -1,7 +1,7 @@
 {
-    "name": "microservice-boilerplate",
+    "name": "check-in-ms",
     "version": "1.0.0",
-    "description": "Boilerplate for microservice",
+    "description": "Check-in microservice",
     "main": "src/app.ts",
     "scripts": {
         "prepare": "husky install",
@@ -21,14 +21,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Yet-Another-Check-In-System/microservice-boilerplate.git"
+        "url": "git+https://github.com/Yet-Another-Check-In-System/check-in-ms.git"
     },
     "author": "Joonas Hiltunen",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/Yet-Another-Check-In-System/microservice-boilerplate/issues"
+        "url": "https://github.com/Yet-Another-Check-In-System/check-in-ms/issues"
     },
-    "homepage": "https://github.com/Yet-Another-Check-In-System/microservice-boilerplate#readme",
+    "homepage": "https://github.com/Yet-Another-Check-In-System/check-in-ms#readme",
     "devDependencies": {
         "@types/jest": "^29.0.3",
         "@typescript-eslint/eslint-plugin": "^5.37.0",

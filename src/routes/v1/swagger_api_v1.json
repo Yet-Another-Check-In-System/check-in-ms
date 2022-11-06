@@ -2,16 +2,16 @@
     "openapi": "3.0.3",
     "info": {
         "title": "XX microservice",
-        "description": "This is a Swagger documentation for XX microservice",
+        "description": "This is a Swagger documentation for check-in microservice",
         "license": {
             "name": "MIT License",
-            "url": "https://github.com/Yet-Another-Check-In-System/xx/blob/main/LICENSE"
+            "url": "https://github.com/Yet-Another-Check-In-System/check-in-ms/blob/main/LICENSE"
         },
         "version": "1.0.0"
     },
     "externalDocs": {
         "description": "Repository",
-        "url": "https://github.com/Yet-Another-Check-In-System/xx"
+        "url": "https://github.com/Yet-Another-Check-In-System/check-in-ms"
     },
     "tags": [
         {
